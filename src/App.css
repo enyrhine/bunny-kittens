@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -8,17 +11,78 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #333333;
+  height: 20dp;
+  padding: 10px;
   color: white;
+  flex-grow: 1;
+  align-self: stretch;
 }
 
 .App-intro {
+  background-color: #d9d9d9;
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-post {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  height: 450px;
+  width: 400px;
+  color: #222;
+  margin-top: 1em;
+  box-shadow: 0px 0px 5px 5px #d9d9d9;
+}
+
+.App-picture {
+  background-color: red;
+  flex: 8;
+  align-self: stretch;
+}
+
+.App-comments {
+  background-color: white;
+  align-self: stretch;
+}
+
+.App-commentBox {
+  background-color: white;
+  display: flex;
+}
+
+.App-info {
+  background-color: white;
+  display: flex;
+}
+
+.App-commentTime{
+  display: flex;
+  width: 320px;
+  align-items: right;
+}
+
+.App-bunnies {
+  background-color: grey;
+  display: flex;
+  width: 65px;
+}
+
+.App-writeComment {
+  background-color: blue;
+  display: flex;
+  width: 200px;
+  align-items: left;
+}
+
+.App-postComment {
+  background-color: green;
+  display: flex;
+  width: 200px;
+  align-items: right;
+}
+
+.App-bunnyLogo {
+  color: pink;
 }
