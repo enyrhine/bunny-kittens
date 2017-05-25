@@ -1,6 +1,7 @@
-This is a team project for React course on Uni Helsinki.
-App is made for posting pictures of cats.
-Bunnykittens allows user comment and like photos. 
+This is a project for React course on Uni Helsinki.
+
+Bunnykittens is made for posting pictures of cats.
+App allows user comment and like photos. 
 
 Future features: 
 user can sign in and post own photos, find other users and comment and like their cats.
