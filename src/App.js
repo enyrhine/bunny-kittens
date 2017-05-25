@@ -22,8 +22,7 @@ class App extends React.Component {
 class Posts extends React.Component{
   createPosts(posts) {
     return posts.map(function(o,i){
-      <CommentList comments={o.comments} />
-      return (<Post key={i} added={o.added} img={o.img} />)
+      return (<Post key={i} added={o.added} img={o.img} comments={o.comments}/>)
     });
   }
 
@@ -67,6 +66,7 @@ function PostInfo(props) {
     <div className="App-info">
       <CommentTimestamp added={props.added}> </CommentTimestamp>
       <Bunnies> </Bunnies>
+
     </div>
   )
 }
@@ -123,7 +123,7 @@ function BunnyCount() {
   );
 }
 
-function Commentbox(props) {
+function Commentbox() {
   return (
     <div className="App-commentBox">
       <CommentWrite> </CommentWrite>
@@ -185,6 +185,14 @@ class CommentList extends React.Component {
         ))}
       </ul>
     );
+  }
+}
+
+class Comment extends React.Component {
+  render() {
+    return (
+      <li key={this.props.id}>{this.props.comment}</li>
+    )
   }
 }
 
