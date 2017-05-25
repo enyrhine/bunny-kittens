@@ -1,8 +1,10 @@
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ff0066;
 }
 
 .App-logo {
@@ -11,12 +13,10 @@
 }
 
 .App-header {
-  background-color: #333333;
-  height: 20dp;
-  padding: 10px;
   color: white;
   flex-grow: 1;
   align-self: stretch;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .App-intro {
@@ -28,18 +28,19 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #d9d9d9;
-  height: 450px;
   width: 400px;
   color: #222;
   margin-top: 1em;
-  box-shadow: 0px 0px 5px 5px #d9d9d9;
+  box-shadow: 0px 0px 5px 5px #eee;
+  border: 1px solid #bbb;
 }
 
 .App-picture {
-  background-color: red;
-  flex: 8;
-  align-self: stretch;
+  padding: 0;
+}
+.App-picture img {
+  width: 100%;
+  margin: 0;
 }
 
 .App-comments {
@@ -50,39 +51,87 @@
 .App-commentBox {
   background-color: white;
   display: flex;
+  align-items: right;
 }
 
 .App-info {
   background-color: white;
   display: flex;
+  align-self: stretch;
 }
 
 .App-commentTime{
   display: flex;
-  width: 320px;
+  width: 355px;
   align-items: right;
 }
 
 .App-bunnies {
-  background-color: grey;
   display: flex;
-  width: 65px;
+  width: 45px;
+  align-self: center;
 }
 
 .App-writeComment {
-  background-color: blue;
   display: flex;
-  width: 200px;
-  align-items: left;
+  flex-grow: 1;
+  align-self: stretch;
+  flex-direction: column;
 }
 
-.App-postComment {
-  background-color: green;
+.App-commentWriter {
   display: flex;
-  width: 200px;
   align-items: right;
 }
 
+.App-postComment {
+  display: flex;
+  color: #333333;
+}
+
 .App-bunnyLogo {
-  color: pink;
+  color: #ff80bf;
+
+}
+
+.logo {
+  height: 2.7em;
+  margin: 1.8em;
+}
+
+.button-nobg {
+  border: 0px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: 1s;
+}
+.button-active {
+  transform: scale(1.5,1.5);
+  transition: 0.5s;
+}
+.App-commentBox ul {
+  flex-grow: 1;
+  align-self: stretch;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align:left;
+}
+.App-commentBox li {
+  padding: 0.5em;
+}
+.App-commentBox form {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-self:stretch;
+  padding: 0.5em;
+  border-top: lightgray solid 1px;
+}
+.App-commentBox form input {
+  flex-grow: 1;
+  align-self: stretch;
+  border: 0;
+  outline: 0;
 }
