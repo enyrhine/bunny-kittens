@@ -1,4 +1,5 @@
-This is a project for React course on Uni Helsinki.
+This is a project using React, not finished yet.
+You can look into it from https://bunny-kittens.herokuapp.com/
 
 Bunnykittens is made for posting pictures of cats.
 App allows user comment and like photos. 
